@@ -24,8 +24,7 @@ submitButton.addEventListener("click", (event) =>{
       localStorage.setItem("users", JSON.stringify([...allUsers,{email:emailInput.value,password:passwordInput.value}]))
     }
 
-      localStorage.getItem("isAuth", "true")
-      window.open("../index.html", "_self")
+      window.open("../auth.html", "_self")
 
     emailInput.value = ""
     passwordInput.value = ""
